@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale = 1">
+
+        <link rel="stylesheet" href="footerstyle.css">
+        <link rel="stylesheet" href="warningstyle.css">
+        <link rel="stylesheet" href="holderstyle.css">
+        <link rel="stylesheet" href="bodystyle.css">
+
+    </head>
+    <body>
+
+        <div class="root" id="root">
+            <div class="top">
+                <div class="topchild">
+                    <p class="heading">Universities around the World</p>
+                </div>
+            </div>
+
+            <div class="mid">
+                <div class="midchild1">
+                    <input class= "field" id="field" placeholder="Enter University/Country Name" type="text"/>
+                </div>
+                <div class="midchild2">
+                    <button onclick=sortarray() name="most" disabled = "true" id="sort" class="sort">Sort Z-A</button>
+                    <p class="results" id="results">results found #</p>
+                    <button id="button" onclick= initiate() class="button">Search</button>
+                </div>
+            </div>
+
+            <div id="parent" class="bottom">
+                <div class="warnframe">
+                    <div class="warnframechild1">
+                        <p class="warntext" id="warn"></p>
+                    </div>
+
+                    <div class="warnframechild2"></div>
+
+                </div>
+            </div>
+        
+            <div class="footer">
+                <button disabled="true" onclick= changePage(0) id="back" class="back"><</button>
+                <p name="1" id="num" class="num">#</p>
+                <button disabled="true" onclick= changePage(1) class="front" id="front">></button>
+            </div>
+        
+        </div>
+
+
+        <script src="./DataHandler.js"></script>
+        <script src="ArrayHandler.js"></script>
+        <script src="Constructor.js"></script>
+        <script src="Initiator.js"></script>
+    </body>
+</html>

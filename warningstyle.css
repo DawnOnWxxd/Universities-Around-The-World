@@ -1,0 +1,46 @@
+.warnframe{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+}
+
+.warnframechild1{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.warntext{
+    color: #92c952;
+    font-family: "Roboto Slab";
+    font-size: 3vh;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-weight: 500;
+    
+}
+
+.warnframechild2{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.showallbtn{
+    margin-top: 4vh;
+    height: 80%;
+    max-height: 50px;
+    border-radius: 40px;
+    border: solid;
+    border-width: 2px;
+    font-family: sans-serif ;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 2vw 0px 2vw;
+    background-color: #d8456b;
+    color: white;
+    border-color: rgb(212, 212, 212);
+}
